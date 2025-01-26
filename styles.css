@@ -720,22 +720,60 @@ padding: 1rem;
 }
 
 
+.autos-catalog-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    margin-left: 3rem;
+}
+
 .autos-catalog {
     text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2rem;
-    margin-left: 2.8rem;
-    margin-bottom: 3rem;
-    overflow-y: auto;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap:1rem;
+
+    width: 62rem;
     height: 100%;
+    overflow-x: scroll;
+    flex: none;
+}
+
+.autos-catalog::-webkit-scrollbar {
+display: none;
+}
+
+#backButton, #nextButton {
+    color: white;
+    border: 1px solid var(--text-color);
+    border-radius: 4rem;
+    font-size: 3rem;
+    cursor: pointer;
+    margin: 1rem;
+    transition: all 0.2s ease;
+    background-color: var(--primary-color-light);
+}
+
+#backButton:hover, #nextButton:hover {
+ transform: scale(1.05);
+}
+
+#backButton {
+    padding: 0.5rem;
+    padding-left: 0.3rem;
+}
+
+#nextButton {
+    padding: 0.5rem;
+    padding-right: 0.3rem;
+
 }
 
 .autos-catalog img {
-    height: 17rem;
-    width: 22rem;
+    width: 100%;
     background: var(--body-color);
-    border-bottom: 1px solid var(--text-color);
     border-radius: 2rem;
     cursor: pointer;
     transition: var(--tran-02);
@@ -743,22 +781,36 @@ padding: 1rem;
 
 .autos-catalog img:hover {
     opacity: 0.9;
-    width: 23rem;
-    height: 18rem;
+    transform: scale(1.01);
 }
 
 
 .autos-catalog .item {
     border-radius: 2rem;
-    margin: 0rem 2rem;
+    margin: 0rem 1rem;
     background: var(--sidebar-color);
-    
+    width: 18rem;
+    height: 25rem;
+    border: 1px solid var(--text-color);
+    flex: none;
+    transition: var(--tran-04);
 }
+
+.autos-catalog .item:hover {
+   cursor: pointer;
+   transform: scale(1.01);
+}
+
+
+
+
+
 
 .autos-catalog h2 {
     color: var(--text-color);
     cursor: pointer;
     transition: var(--tran-02);
+    font-size: 1rem;
 }
 
 .autos-catalog h2:hover {
@@ -767,12 +819,14 @@ padding: 1rem;
 
 .autos-catalog .price {
     color: var(--button-color);
+    font-size: 1rem;
 }
 
 .autos-catalog .car-details {
     color: var(--text-color);
     text-align: center;
-    padding: 3rem;
+    padding: 1rem;
+    font-size: 0.8rem;
 }
 
 /* ===== UBICACION ===== */
@@ -789,6 +843,7 @@ padding: 1rem;
     padding-bottom: 4rem;
     background: var(--secondary-body-color);
     color: var(--text-color);
+    
 }
 
 .company-info .card {
@@ -800,7 +855,7 @@ padding: 1rem;
     width: 35rem;
     border: var(--text-color) solid 1px;
     border-radius: 1rem;
-  
+    transform: scale(0.85);
 }
 
 .ubicacion-info {
@@ -926,10 +981,12 @@ footer {
     background-color: var(--primary-color-light);
     color: antiquewhite;
     border-top: solid 1px var(--primary-color);
+   
 }
 
 footer p {
     margin-left: 4rem;
     position: relative;
     top: 1.8rem;
+    font-size: 0.8rem;
 }

@@ -24,20 +24,22 @@ const body = document.querySelector("body"),
     }else {
         modeText.innerText = "Modo Noche";
     }
-   })
-
-   navButton.addEventListener("mouseover", () => {
-    body.classList.toggle("button");
-
-   })
+   });
 
 
-   catalogButton.addEventListener('click', () => {
-    const autosSection = document.querySelector('.autos-catalog');  // replace with the actual class or ID
-    autosSection.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-       
-    });
-});
 
+  let scrollBar = document.querySelector(".autos-catalog");
+  let backButton = document.getElementById("backButton"); 
+  let nextButton = document.getElementById("nextButton");
+
+ 
+
+  nextButton.addEventListener("click", () => {
+    scrollBar.style.scrollBehavior = "smooth";
+    scrollBar.scrollLeft += 1000;
+  })
+
+  backButton.addEventListener("click", () => {
+    scrollBar.style.scrollBehavior = "smooth";
+    scrollBar.scrollLeft -= 1000;
+  })
