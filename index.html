@@ -28,8 +28,8 @@
 
 
 
-<i class='bx bx-chevron-right toggle'></i>
-
+<i class='bx bx-menu toggle' title="Menú"></i>
+<i class='bx bxs-chevron-left open-arrow' title="Cerrar menú"></i>
         </header>
 
 
@@ -38,26 +38,21 @@
             <div class="menu">
                 <ul class="menu-links">
                     <li class="nav-link">
-                    <a href="#">
-
-                        <span class="text nav-text">AUTOS</span>
+                        
+                        <i class='bx bxs-right-arrow sidebar-icon'></i>
+                        <a href="#autos-button">
+                            <h2 class="text">AUTOS</h2>
                     </a>
 
                     </li>
 
-                    <li class="nav-link">
-                        <a href="#">
-    
-                            <span class="text nav-text">SUBASTAS</span>
-                        </a>
-    
-                        
-                        </li>
+                    
 
                         <li class="nav-link">
-                            <a href="#">
+                            <i class='bx bxs-right-arrow sidebar-icon'></i>
+                            <a href="#contacto-button">
         
-                                <span class="text nav-text">CONTACTO</span>
+                                <h2 class ="text">CONTACTO</h2>
                             </a>
         
                             
@@ -90,38 +85,123 @@
         <img src="./content/white-logo.png" alt="dark logo">
     </span>
 
-    <nav class="main-header-content">
 
-<ul class="main-header-options">
-    <li class="text">AUTOS DISPONIBLES</li>
-    <li>UBICACION</li>
-    <li>CONTÁCTANOS</li>
-
-</ul>
-
-    </nav>
 </header>
 
 <main>
     <div class="main-banner">
+        <div class="background-dark"></div>
         <img src="./content/CAR.jpg">
         <div class="main-banner-title"><h1>Autos de segunda,</h1>
             <h1 class="main-title">AL MEJOR PRECIO</h1>
             <div class="buttons">
-            <span class="autos-button">AUTOS</span>
-            <span class="contacto-button">CONTACTO</span>
+            <a class="autos-button" href="#autos-button-2">AUTOS</a>
+            <a class="contacto-button" href="#contacto-button-2">CONTACTO</a>
         </div>
         </div> 
         
     </div>
 </main>
 
+<br id="autos-button">
+<div id="autos-button-2"></div>
+
+<div class="catalog" >
+
+    <h2 class="catalog-title" ><i class='bx bxs-down-arrow-circle icon'></i> AUTOS DISPONIBLES <i class='bx bxs-down-arrow-circle icon'></i></h2>
 
 <div class="autos-catalog">
-    
+
+
+
+        <div class="item-1 item">
+            <img src="./content/car1.jpg">
+            <h2>TOYOTA COROLLA 2016</h2>
+            <h2 class="price">3,000$</h2>
+            <p class="car-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                reiciendis ratione obcaecati doloremque explicabo voluptatem quod aliquam earum 
+                culpa natus delectus dolorem cum libero excepturi minus, animi, facilis nulla expedita.</p>
+        </div>
+
+        <div class="item-2 item">
+            <img src="./content/car2.jpg">
+            <h2>MAZDA 2.1.5 2019</h2>
+            <h2 class="price">4,000$</h2>
+            <p class="car-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                reiciendis ratione obcaecati doloremque explicabo voluptatem quod aliquam earum 
+                culpa natus delectus dolorem cum libero excepturi minus, animi, facilis nulla expedita.</p>
+        </div>
+
+        <div class="item-3 item">
+            <img src="./content/car3.jpg">
+            <h2>FORD FIESTA 2018</h2>
+            <h2 class="price">2,500$</h2>
+            <p class="car-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                 reiciendis ratione obcaecati doloremque explicabo voluptatem quod aliquam earum 
+                 culpa natus delectus dolorem cum libero excepturi minus, animi, facilis nulla expedita.</p>
+        </div>
+
+
+
+    </div>
+
 </div>
 
+<div class="company-info">
+
+    <div class="ubicacion card">
+
+        
+         <h2 class="ubicacion-title">UBICACIÓN</h2>
+         <div class="ubicacion-info">
+            <i class='bx bxs-map icon'></i>
+            <div class="direccion">
+                <h3>123 S Main St,</h3>
+            <h3>Columbus, OH 43004</h3>
+        </div>
+        </div>
+    </div>
+
+    <br id="contacto-button">
+    <br id="contacto-button-2"></br>
+
+    <div class="contacto card" >
+        <h2 class="contacto-title">CONTACTO</h2>
+           <div class="contacto-methods">
+            
+            <div class="phone">
+            <h3>Línea telefónica</h3>
+            <i class='bx bxs-phone icon'></i> <h4>(614)-323-0555</h4>
+        </div>
+
+            <div class="social-container">
+            <h3>Redes sociales</h3>
+           
+            <i class='bx bxl-whatsapp bxl whatsapp'></i>
+            <i class='bx bxl-facebook-circle facebook'></i>
+
+    </div>
+    </div>
+
+            
+
+
+
+        </div>
+
+   </div>
+
+</div>
+
+
     </section>
+
+<footer>
+    <p>© AP Vehicles. All rights reserved.</p>
+</footer>
+
+
+
 
 <script src="./script.js"></script>
 
